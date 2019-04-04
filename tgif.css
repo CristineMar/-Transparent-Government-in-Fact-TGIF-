@@ -1,0 +1,121 @@
+#spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #0099ff;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.partySelector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px
+}
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.states {
+    display: flex;
+    flex-direction: row
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+.capitol-image {
+    padding: 30px;
+    padding-right: 50px
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.email {
+    padding-top: 10px
+}
+
+.dropdown {
+    padding-left: 10px
+}
+
+
+.navbar {
+   
+    border-width: medium;
+   }
+
+.article {padding: 10px;
+padding-top: 20px}
+
+h5 {display: inline-block;
+padding-left: 10px}
+h2 {display: inline-block}
+
+.row {padding-top: 20px}
+
+.backtotop{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 100px;
+}
+
+table {width: 100%;
+table-layout: fixed}
+
+.table-column-name {width: 30%}
+.table-column-party{width: 15%}
+.table-column-voted{width: 20%}
+
+.header img{width:100px}
+
+.email img {width:20px}
